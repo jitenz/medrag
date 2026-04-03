@@ -1,0 +1,14 @@
+.panel { padding: 24px; overflow-y: auto; flex: 1; height: 100%; max-width: 640px; }
+.section { margin-bottom: 28px; }
+.sectionTitle { font-size: 12px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: 0.06em; padding-bottom: 10px; border-bottom: 1px solid var(--border); margin-bottom: 14px; }
+.row { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; }
+.row label { font-size: 13px; color: var(--text2); }
+.row select { font-size: 12px; padding: 5px 10px; border: 1px solid var(--border2); border-radius: var(--radius); background: var(--bg3); color: var(--text); }
+.sliderRow { display: flex; align-items: center; gap: 12px; padding: 6px 0; }
+.sliderRow label { font-size: 13px; color: var(--text2); min-width: 150px; }
+.sliderRow input[type=range] { flex: 1; accent-color: var(--blue); }
+.val { font-size: 13px; font-weight: 500; min-width: 36px; text-align: right; color: var(--text); }
+.sysPrompt { width: 100%; background: var(--bg3); border: 1px solid var(--border2); border-radius: var(--radius); color: var(--text); font-size: 13px; padding: 12px; resize: vertical; line-height: 1.6; }
+.sysPrompt:focus { outline: none; border-color: var(--blue-border); }
+.about { font-size: 13px; color: var(--text2); line-height: 1.7; }
+.about code { background: var(--bg3); padding: 2px 6px; border-radius: 4px; font-size: 12px; color: #93c5fd; }

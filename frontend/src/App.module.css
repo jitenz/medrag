@@ -1,0 +1,11 @@
+.app { display: flex; height: 100vh; overflow: hidden; }
+.main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.errorBar { display: flex; align-items: center; justify-content: space-between; padding: 8px 16px; background: var(--red-bg); border-bottom: 1px solid rgba(239,68,68,0.25); font-size: 13px; color: #fca5a5; }
+.errorBar button { background: none; border: none; color: #fca5a5; font-size: 14px; padding: 2px 6px; }
+.tabs { display: flex; align-items: center; gap: 0; border-bottom: 1px solid var(--border); background: var(--bg2); padding: 0 16px; flex-shrink: 0; }
+.tabBtn { padding: 11px 16px; font-size: 13px; font-weight: 500; color: var(--text2); border: none; background: transparent; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all 0.15s; display: flex; align-items: center; gap: 6px; }
+.tabBtn:hover { color: var(--text); }
+.tabActive { color: var(--text); border-bottom-color: var(--blue); }
+.tabBadge { font-size: 10px; padding: 1px 6px; background: var(--blue-bg); color: #93c5fd; border-radius: 999px; }
+.tabStats { margin-left: auto; display: flex; gap: 8px; font-size: 11px; color: var(--text3); }
+.tabContent { flex: 1; overflow: hidden; display: flex; flex-direction: column; }

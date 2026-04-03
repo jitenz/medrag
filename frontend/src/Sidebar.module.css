@@ -1,0 +1,196 @@
+.sidebar {
+  width: 264px;
+  min-width: 264px;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.logoIcon {
+  width: 30px;
+  height: 30px;
+  background: var(--blue);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logoText {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.logoSub {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 1px;
+}
+
+.uploadZone {
+  border: 1px dashed var(--border2);
+  border-radius: var(--radius);
+  padding: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: var(--bg3);
+}
+
+.uploadZone:hover {
+  border-color: var(--blue);
+  background: var(--blue-bg);
+}
+
+.uploadIcon {
+  font-size: 20px;
+  color: var(--blue);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.uploadLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.uploadSub {
+  font-size: 11px;
+  color: var(--text3);
+}
+
+.docsList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.sectionLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge {
+  background: var(--blue-bg);
+  color: var(--blue);
+  border-radius: 999px;
+  padding: 1px 6px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.emptyDocs {
+  font-size: 12px;
+  color: var(--text3);
+  padding: 8px 4px;
+  font-style: italic;
+}
+
+.docItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 4px;
+  background: var(--bg3);
+  animation: slideIn 0.2s ease;
+}
+
+.docIcon { font-size: 14px; flex-shrink: 0; }
+
+.docMeta { flex: 1; min-width: 0; }
+
+.docName {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.docChunks { font-size: 11px; color: var(--text3); margin-top: 1px; }
+
+.docActions { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+
+.indexed {
+  font-size: 10px;
+  padding: 2px 6px;
+  background: var(--green-bg);
+  color: var(--green);
+  border-radius: 999px;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: var(--text3);
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.1s;
+}
+
+.deleteBtn:hover { color: var(--red); background: var(--red-bg); }
+
+.pipeline {
+  padding: 14px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.pipelineStep {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: background 0.3s;
+}
+
+.idle { background: var(--border2); }
+.active { background: var(--blue); animation: pulse 1s infinite; }
+.done { background: var(--green); }
+
+.totalChunks {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
